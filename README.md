@@ -19,7 +19,7 @@
 
 ### Setup
 
-## Clone the repository
+### Clone the repository
 
 `git clone https://github.com/ssk367/pyorganizer.git
 cd pyorganizer`
@@ -30,9 +30,7 @@ Create and activate virtual environment (Windows PowerShell)
 
 `.\venv\Scripts\Activate`
 
-# Run the script
-
-python pyorganizer.py
+### Run script → python pyorganizer.py
 
 `pyorganizer/
 │
