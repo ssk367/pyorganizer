@@ -21,27 +21,10 @@
 
 ### Clone the repository
 
-`git clone https://github.com/ssk367/pyorganizer.git
-cd pyorganizer`
+`git clone https://github.com/ssk367/pyorganizer.git cd pyorganizer`
 
 Create and activate virtual environment (Windows PowerShell)
 
-`python -m venv venv `
+`python -m venv venv`
 
 `.\venv\Scripts\Activate`
-
-### Run script → python pyorganizer.py
-
-`pyorganizer/
-│
-├── organizer/           # Core modules
-│   ├── scanner.py       # FileScanner class
-│   ├── sorter.py        # FileCategorizer class (coming soon)
-│   ├── mover.py         # FileMover class (coming soon)
-│   └── logger.py        # Logger config (planned)
-│
-├── sample_files/        # Test folder with random files
-├── pyorganizer.py       # CLI entry point
-├── requirements.txt     # Dependency list
-├── .gitignore
-└── README.md`
