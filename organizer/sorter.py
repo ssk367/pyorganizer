@@ -2,10 +2,14 @@
 
 from datetime import datetime
 from pathlib import Path
+from organizer.logger import setup_logger
 
 
 class FileCategorizer:
     """Categorizes files based on different strategies."""
+
+    def __init__(self, logger=None):
+        self.logger = logger or setup_logger()
 
     def by_extension(self, file_path: Path) -> str:
         """Categorize file by its extension.

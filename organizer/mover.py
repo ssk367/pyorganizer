@@ -2,10 +2,14 @@
 
 from pathlib import Path
 import shutil
+from organizer.logger import setup_logger
 
 
 class FileMover:
     """Moves files to target directories based on categorization."""
+
+    def __init__(self, logger=None):
+        self.logger = logger or setup_logger()
 
     def move_to_folder(self, file_path: Path, target_root: Path, category: str) -> None:
         """Move a file into a subfolder under the target root based on the category.
@@ -26,4 +30,6 @@ class FileMover:
         try:
             shutil.move(str(file_path), str(destination_path))
         except Exception as e:
-            print(f"Error moving file {file_path} -> {destination_path}: {e}")
+            self.logger.error(
+                f"Error moving file {file_path} -> {destination_path}: {e}"
+            )
